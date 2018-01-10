@@ -1,0 +1,8 @@
+# Compiled Dirs
+src/client/public/
+
+# Dependency Directories
+node_modules/
+
+# Environment Directories
+config/

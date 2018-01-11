@@ -9,14 +9,15 @@ class App extends React.Component {
     }
   }
 
-  // componentDidMount () {
-  //   fetch('/data')
-  //     .then(data => {
-  //       let carrierData = data.carrier_cards;
-  //       this.setState({carrierData: carrierData});
-  //       console.log('state', this.state.carrierData);
-  //     })
-  // }
+  componentDidMount () {
+    fetch('/data')
+      .then(response => response.json())
+      .then(data => {
+        let carrierData = data.carrier_cards;
+        this.setState({carrierData: carrierData});
+        console.log('state', this.state.carrierData);
+      })
+  }
 
   render () {
     return <p>You've just compared x rates in x minutes!</p>;

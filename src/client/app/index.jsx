@@ -28,7 +28,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='app'>
         <p className='header'>You just compared <strong>{this.state.results} rates</strong> in {this.state.searchTime} minutes!</p>
           {
             this.state.carrierData.map((carrierObj, i) => {

@@ -3,6 +3,7 @@ import Main from './Main.jsx';
 import Body from './Body.jsx';
 
 const Card = (props) => {
+  //group JSON data into separate objects to send to two child components
   let mainObj = {
     rate: props.carrier.rate || null,
     rate_tag: props.carrier.tag || null,
@@ -12,7 +13,6 @@ const Card = (props) => {
     featureArray: props.carrier.features || null,
     link: props.carrier.action.link
   };
-
   let bodyObj = {
     name: props.carrier.name,
     featureArray: props.carrier.features || props.carrier.features_html,

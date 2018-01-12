@@ -1,4 +1,5 @@
 body {
+  margin: 0px 200px;
   font-family: arial;
   font-size: 18px; }
   body .header {
@@ -34,6 +35,7 @@ body {
     float: right;
     padding: 15px; }
 
+.details,
 .features {
   padding: 15px; }
 
@@ -42,5 +44,10 @@ body {
 .detail-text {
   color: #959595;
   font-size: 14px; }
+
+.rate-tag {
+  color: #5c6cff;
+  font-size: 1.1rem;
+  font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

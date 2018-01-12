@@ -20,6 +20,7 @@ class App extends React.Component {
         this.setState({
           carrierData: data.carrier_cards,
           results: data.carriers_searched,
+          //search time rounded up to minute
           searchTime: Math.ceil(data.search_time/60000)
         });
       })
@@ -28,7 +29,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <p>You just compared <strong>{this.state.results} rates</strong> in {this.state.searchTime} minutes!</p>
+        <p className='header'>You just compared <strong>{this.state.results} rates</strong> in {this.state.searchTime} minutes!</p>
           {
             this.state.carrierData.map((carrierObj, i) => {
               return <Card carrier={carrierObj} key={i} />

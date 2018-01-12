@@ -4,9 +4,9 @@ import Details from './Details.jsx';
 
 const Body = (props) => {
   return (
-    <div>
+    <div className='body row'>
       <Features list={props.data.featureArray} />
-      <Details text={props.data.detail_body} disclaimer={props.data.disclaimer} />
+      <Details name={props.data.name} text={props.data.detail_body} disclaimer={props.data.disclaimer} />
     </div>
   )
 }

@@ -14,6 +14,7 @@ const Card = (props) => {
   };
 
   let bodyObj = {
+    name: props.carrier.name,
     featureArray: props.carrier.features || props.carrier.features_html,
     detail_body: props.carrier.detail_body || null,
     disclaimer: {
@@ -23,10 +24,10 @@ const Card = (props) => {
   };
 
   return (
-    <div className='card'>
-      <Main card-type={props.carrier.type} data={mainObj} corner-tag={props.carrier.corner_tag || false} />
+    <div  className='card container-fluid'>
+      <Main type={props.carrier.type} data={mainObj} corner-tag={props.carrier.corner_tag || false} />
       <Body data={bodyObj} />
-    </div>
+    </div> 
   )
 }
 

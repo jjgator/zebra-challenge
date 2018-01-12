@@ -17,9 +17,9 @@ const Main = (props) => {
   }
 
   return (
-    <div>
+    <div className='main row'>
       <Title data={titleObj} />
-      <Quote card-type={props.card_type} data={quoteObj} />
+      <Quote type={props.type} data={quoteObj} />
     </div>
   )
 }

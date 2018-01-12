@@ -3,9 +3,9 @@ import Button from './Button.jsx';
 
 const Quote = (props) => {
   return (
-    <div>
+    <div className='quote col-xs-6 text-center'>
       <p>Rate Placeholder</p>
-      <Button link={props.data.link}/>
+      <Button type={props.type} link={props.data.link}/>
     </div>
   )
 }

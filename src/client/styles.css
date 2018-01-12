@@ -1,13 +1,46 @@
 body {
   font-family: arial;
   font-size: 18px; }
+  body .header {
+    padding: 5px;
+    padding-top: 15px; }
 
 .card {
   width: 100%;
-  border: solid 1px #EAEAEA;
+  border: solid 1px #eaeaea;
   border-radius: 4px;
-  margin: 5px 0px; }
+  margin: 10px 5px; }
   .card button {
-    background-color: #5c6cff; }
+    color: white;
+    width: 125px;
+    font-size: 1.35rem;
+    padding: .75rem 1.5rem;
+    border-radius: 2rem;
+    border: none; }
+    .card button.btn0 {
+      background: linear-gradient(350deg, #6169f4 40%, #1cbeec 85%); }
+    .card button.btn3 {
+      background: linear-gradient(350deg, #f87000 40%, #f8ae00 85%); }
+  .card .title {
+    float: left;
+    padding: 15px; }
+    .card .title .carrier-name {
+      font-size: 20px; }
+    .card .title .logo {
+      padding: 15px;
+      max-height: 120px;
+      max-width: 120px; }
+  .card .quote {
+    float: right;
+    padding: 15px; }
+
+.features {
+  padding: 15px; }
+
+.left-list,
+.right-list,
+.detail-text {
+  color: #959595;
+  font-size: 14px; }
 
 /*# sourceMappingURL=styles.css.map */

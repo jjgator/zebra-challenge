@@ -29,13 +29,11 @@ class App extends React.Component {
     return (
       <div>
         <p>You just compared <strong>{this.state.results} rates</strong> in {this.state.searchTime} minutes!</p>
-        <div> 
           {
             this.state.carrierData.map((carrierObj, i) => {
               return <Card carrier={carrierObj} key={i} />
             })
           }
-        </div>
       </div>
     );
   }

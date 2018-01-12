@@ -10,7 +10,3 @@ const Card = (props) => {
 }
 
 export default Card;
-
-
-      // <p>${Math.ceil(props.carrier.rate)}/month</p>
-      // <button>{props.carrier.action.link_text}</button>

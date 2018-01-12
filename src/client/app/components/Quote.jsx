@@ -5,7 +5,7 @@ const Quote = (props) => {
   return (
     <div>
       <p>Rate Placeholder</p>
-      <Button />
+      <Button link={props.data.link}/>
     </div>
   )
 }

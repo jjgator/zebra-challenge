@@ -1,0 +1,13 @@
+body {
+  font-family: arial;
+  font-size: 18px; }
+
+.card {
+  width: 100%;
+  border: solid 1px #EAEAEA;
+  border-radius: 4px;
+  margin: 10px 5px; }
+  .card button {
+    background-color: #5c6cff; }
+
+/*# sourceMappingURL=styles.css.map */
